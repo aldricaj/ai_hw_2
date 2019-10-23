@@ -24,10 +24,7 @@ def main():
 
 def _generate_constraints(problem, addend, summ):
     add_1 = addend[0].zfill(len(summ))
-    print(add_1)
     add_2 = addend[1].zfill(len(summ))
-    print(add_2)
-    print(summ)
     # -col is the index from the right
     for col in range(1,len(summ)+1):
         if -col == -1: # we are in the ones place
